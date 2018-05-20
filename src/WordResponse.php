@@ -11,7 +11,7 @@ class WordResponse extends Response
     protected $filename;
 
     /**
-     * CsvResponse constructor.
+     * WordResponse constructor.
      * @param array $data
      * @param $filename
      * @param int $status

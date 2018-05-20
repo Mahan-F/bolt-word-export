@@ -67,7 +67,7 @@ class Extension extends SimpleExtension
 
         // We shouldn't be able to get here with an invalid CT but if we do, just use an empty array
         if (!$this->canExport($ct)) {
-            return new CsvResponse([]);
+            return new WordResponse([]);
         }
 
         /** @var QueryResultset $allRecords */
@@ -91,7 +91,7 @@ class Extension extends SimpleExtension
 
         $filename = isset($config['file_names'][$ct]) ? $config['file_names'][$ct]: $ct;
 
-        return new CsvResponse($txtTest, $filename);
+        return new WordResponse($txtTest, $filename);
     }
 
     /**
