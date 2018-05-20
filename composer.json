@@ -1,0 +1,51 @@
+{
+    "name": "mahan-f/bolt-word-export",
+    "description": "Export Bolt Content-types to a Word file",
+    "type": "bolt-extension",
+    "keywords": [
+        "word",
+        "export"
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "bolt/bolt": "^3.4"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ross Riley",
+            "email": "riley.ross@gmail.com"
+        },
+        {
+            "name": "Mahan Fathi",
+            "email": "mahan_f@blasticdesigns.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "name": "bolt",
+            "type": "composer",
+            "url": "https://extensions.bolt.cm/satis/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Extension\\WordExport\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bolt\\Extension\\WordExport\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "bolt-assets": "web",
+        "bolt-class": "Bolt\\Extension\\WordExport\\Extension"
+    }
+}
