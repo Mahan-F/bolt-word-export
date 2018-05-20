@@ -1,5 +1,5 @@
 {
-    "name": "mahan-f/bolt-word-export",
+    "name": "Mahan-F/bolt-word-export",
     "description": "Export Bolt Content-types to a Word file",
     "type": "bolt-extension",
     "keywords": [
